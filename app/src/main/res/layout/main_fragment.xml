@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.movies.Main_fragment">
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="2dp"
+        android:verticalSpacing="2dp"
+        android:numColumns="2">
+
+    </GridView>
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/Base.Widget.AppCompat.ProgressBar"
+        android:layout_centerInParent="true"
+        android:id="@+id/loadingBar"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/emptytext"
+        />
+    <ImageView
+
+        android:layout_above="@+id/emptytext"
+        android:src="@drawable/emptyview"
+        android:scaleType="fitXY"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="32dp"
+
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/emptyimage"
+        />
+</RelativeLayout>

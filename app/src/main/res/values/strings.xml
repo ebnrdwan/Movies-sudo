@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Movies</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="defaultSort" translatable="false"> top_rated</string>
+    <string name="sort_title">Sort By</string>
+    <string name="sort_key" translatable="false">sort_by</string>
+    <string name="sort_popularity_key" translatable="false">Most popular</string>
+    <string name="sort_popularity_value" translatable="false">popular</string>
+    <string name="sort_top_rate_key" translatable="false"> Top Rated</string>
+    <string name="sort_top_rate_value" translatable="false">top_rated</string>
+    <string name="favorite_key">favorite</string>
+    <string name="favorite_value">myfavorite</string>
+</resources>

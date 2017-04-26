@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.android.movies.Detail_fragment">
+
+
+
+        <ImageView
+            android:id="@+id/posterdetail"
+            android:layout_width="match_parent"
+            android:layout_height="800dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/holder" />
+
+        <TextView
+            android:id="@+id/movietitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/posterdetail"
+            android:layout_marginTop="8dp"
+            android:textSize="40dp"
+            android:layout_margin="16dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textStyle="bold"
+            tools:text="TITle" />
+<RelativeLayout
+    android:layout_below="@+id/movietitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detailbar"
+    android:background="@color/colorPrimaryDark">
+<ImageButton
+    android:id="@+id/favorite"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:src="@drawable/like"
+    android:background="@android:color/transparent"/>
+    <TextView
+        android:layout_marginLeft="8dp"
+        android:id="@+id/releaseDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        tools:text="realease date"
+        android:textColor="@color/colorAccent"
+        android:paddingBottom="8dp" />
+
+    <RatingBar
+        android:id="@+id/ratingmovie"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:layout_alignBottom="@+id/releaseDate"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="8dp"
+        android:layout_toLeftOf="@+id/releaseDate"
+        android:numStars="5"
+        android:rating="5"
+        android:stepSize=".1" />
+</RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/overivewmovie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailbar"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            tools:text="the overivvew of the movie pfjgn dofnw[oidmvn dfj
+        vsd;fmw[oingfgo[fn[ofng[ofni gs[o" />
+        <TextView
+            android:id="@+id/movie_title_head"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/overivewmovie"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="20dp"
+            android:text="Movie Trailers"
+            android:textColor="@color/colorAccent"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            />
+        <LinearLayout
+            android:id="@+id/reviewView"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="2000dp"
+            android:layout_marginTop="32dp"
+            android:layout_below="@+id/overivewmovie">
+            <ListView
+                android:layout_marginTop="32dp"
+                android:id="@+id/movieList"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:divider="@color/colorAccent"
+                android:drawSelectorOnTop="true">
+            </ListView>
+            <TextView
+                android:id="@+id/review_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overivewmovie"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="20dp"
+                android:text="Movie Reviews"
+                android:textColor="@color/colorAccent"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textStyle="bold"
+                />
+            <ListView
+                android:layout_marginTop="32dp"
+                android:id="@+id/reviewList"
+                android:layout_width="match_parent"
+                android:layout_height="2000dp"
+                android:divider="@color/colorAccent"
+                android:dividerHeight="0.1dp"
+                android:drawSelectorOnTop="true">
+            </ListView>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+    </RelativeLayout>
+
+
+</ScrollView>

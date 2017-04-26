@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="sort_by_key">
+    <item >@string/sort_popularity_key </item>
+    <item>@string/sort_top_rate_key</item>
+    <item>@string/favorite_key</item>
+</string-array>
+
+    <string-array name="sort_by_value">
+        <item>@string/sort_popularity_value</item>
+        <item>@string/sort_top_rate_value</item>
+        <item>@string/favorite_value</item>
+    </string-array>
+
+
+</resources>
